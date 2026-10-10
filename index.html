@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agenda de supervisión, Zona 21</title>
+<meta name="theme-color" content="#003352">
+<meta name="description" content="Agenda de supervisión escolar de la Zona 21, ciclo 2026-2027. Funciona sin conexión.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<noscript><p style="padding:24px;font:18px sans-serif">Esta agenda necesita JavaScript activado en el navegador.</p></noscript>
+
+<div id="app">
+  <nav id="rail" aria-label="Secciones de la agenda">
+    <a class="marca" href="#/inicio" aria-label="Ir al inicio"><span class="marca-1">Supervisión escolar</span><span class="marca-2">Zona 21</span></a>
+    <div id="rail-nav" class="rail-nav"></div>
+    <div id="rail-pie" class="rail-pie"><button id="chip" class="chip-sync" type="button" aria-label="Estado de la sincronización"></button></div>
+  </nav>
+  <main>
+    <header id="top">
+      <h1 id="titulo">Mi supervisión</h1>
+      <div class="buscar" role="search"><input id="q" type="search" placeholder="Buscar en la agenda" aria-label="Buscar en toda la agenda" autocomplete="off"></div>
+      <button id="btn-sync-top" class="btn ico" type="button" aria-label="Sincronizar ahora"></button>
+    </header>
+    <section id="view" tabindex="-1" aria-live="polite"></section>
+  </main>
+</div>
+
+<dialog id="dlg"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="portada" role="img" aria-label="Portada de la agenda de supervisión escolar, Zona Escolar 21, 2026 a 2027"><img src="portada.jpg" alt=""></div>
+
+<script src="js/enlaces.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ink.js"></script>
+<script src="js/views.js"></script>
+<script src="js/views2.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
